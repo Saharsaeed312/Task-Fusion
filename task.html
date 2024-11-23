@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>task maneger</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <img src="timer.png" width="150px" />
+            <h1 id="nav-head"><span>Task</span><span>Fusion</span></h1>
+        </nav>
+        <div class="container2">
+            <div class="managTask">
+                <h1>Manage Task</h1>
+                <p>Organize your tasks efficiently and stay on top of your priorities.</p>
+                <input type="text" id="task" placeholder="Enter Your Task" /><button onclick="manageTask()">Add Task</button>
+                <div class="taskList"><ul id="taskList"></ul></div>
+            </div>
+            <div class="setTime">
+                <h1>Set Time</h1>
+                <p>Allocate time for each task and maximize your efficiency.</p>
+                <input type="time" id="taskTime" /><button onclick="setTime()">Set Time</button>
+                <div class="result"><ul id="timeList"></ul></div>
+            </div>
+        </div>
+        <div class="conclusionContainer">
+            <button onclick="showConclusion()" class="button">Show Daily Summary</button>
+            <div id="summary" class="summary" style="display: none;"></div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Branding -->
+                <div class="footer-branding">
+                    <img src="timer.png" alt="Timer Logo" width="100px" />
+                    <h2>Task Fusion</h2>
+                    <p>Smart solutions for time management.</p>
+                </div>
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email:support@taskfusion.com</p>
+                    <p>Phone:+1(555)123-4567</p>
+                    <p>Address:123 Productivity Lane,Time City</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy;2024 Task Fusion.All rights reserved.</p></div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

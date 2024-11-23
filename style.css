@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gloria+Hallelujah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Gloria+Hallelujah&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Gloria Hallelujah", "cursive";
+    background-color: #f9f6ee;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #007bff;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    color: #fff;
+}
+nav img {
+    width: 150px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+@media screen and (max-width: 786px) {
+    nav img {
+      width: 80px;
+      
+    }
+  }
+  
+nav img:hover {
+    transform: scale(1.1);
+}
+nav h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-right: 10%;
+}
+@media screen and (max-width: 786px) {
+    nav h1 {
+    font-size: 1rem;
+    margin-right: 10%;
+    }
+  }
+#nav-head {
+    display: inline-block;
+    font-family: "Gloria Hallelujah", "cursive";
+    /* overflow: hidden; */
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        width: 20%;
+        opacity: 1;
+    }
+}
+#nav-head {
+    animation: typing 1s steps(20) 1s forwards, blink 0.75s step-end infinite;
+}
+@keyframes blink {
+    50% {
+        border-color: #fff0;
+    }
+}
+#nav-head span {
+    display: inline-block;
+    opacity: 0;
+    animation: showText 1s ease-out forwards;
+}
+#nav-head span:nth-child(1) {
+    animation-delay: 1s;
+}
+#nav-head span:nth-child(2) {
+    animation-delay: 2s;
+}
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.time-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 55px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media screen and (max-width: 786px) {
+    .time-container{
+      margin: 20px;
+      
+    }
+  }
+@media screen and (max-width: 786px) {
+    .time-container h1{
+      font-size: 26px !important;
+      
+    }
+  }
+
+.time-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+    background-color: #fff;
+}
+.time-container h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-family: "Archivo Black", sans-serif;
+}
+.time-container p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+@media screen and (max-width: 786px) {
+    .time-container p{
+      font-size: 16px !important;
+      
+    }
+  }
+.time-container button {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 5%;
+}
+.time-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+.time-container button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+.time-container button:focus {
+    outline: 2px solid #80bdff;
+    outline-offset: 2px;
+}
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-branding {
+    margin-left: 10%;
+}
+.footer-branding h2 {
+    font-size: 1.8rem;
+    color: #f1c40f;
+}
+.footer-branding p {
+    font-style: italic;
+    margin: 0;
+}
+.footer-contact {
+    margin-right: 10%;
+}
+.footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+.footer-contact p {
+    margin: 5px 0;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 15px;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+}
+
+/* task page css  */
+
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 786px) {
+    .container2{
+display: inline-block;      
+    }
+  }
+
+  @media screen and (max-width: 786px) {
+    .managTask{
+margin-bottom: 20px;     
+    }
+  }
+.managTask,
+.setTime {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.managTask,
+.setTime:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+    background-color: #fff;
+}
+.conclusionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.conclusionContainer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+    background-color: #fff;
+}
+input[type="text"],
+input[type="time"] {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 42px;
+}
+.taskList,
+.result {
+    margin-top: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+h1 {
+    font-size: 2.2rem;
+    font-weight: 400px;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+}
+p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+button {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 5%;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+button:focus {
+    outline: 2px solid #80bdff;
+    outline-offset: 2px;
+}
+.taskList,
+.result {
+    background-color: #80bdff86;
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+#taskList,
+#timeList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#taskList li,
+#timeList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#taskList li:hover,
+#timeList li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+#taskList li .taskName,
+#timeList li .timeLabel {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+#summary {
+    background-color: #80bdff86;
+    border-radius: 12px;
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+#summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#summary li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+#summary li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+}
+#summary li .taskName,
+#summary li .timeLabel {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    font-family: "Gloria Hallelujah", "cursive";
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-branding {
+    margin-left: 10%;
+}
+.footer-branding h2 {
+    font-size: 1.8rem;
+    color: #f1c40f;
+    font-family: "Gloria Hallelujah", "cursive";
+}
+.footer-branding p {
+    font-style: italic;
+    margin: 0;
+    font-family: "Gloria Hallelujah", "cursive";
+}
+.footer-contact {
+    margin-right: 10%;
+}
+.footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+    font-family: "Gloria Hallelujah", "cursive";
+}
+.footer-contact p {
+    margin: 5px 0;
+    font-family: "Gloria Hallelujah", "cursive";
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 15px;
+    font-size: 0.8rem;
+    color: #bdc3c7;
+}
+.footer-bottom p {
+    font-family: "Gloria Hallelujah", "cursive";
+}
